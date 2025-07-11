@@ -1,0 +1,13 @@
+:root {
+    --container-width: 1590px;
+
+    --background-color: #131517;
+    --background-light-color: #1E1F25;
+    --paragraph-color: #ADB3BF;
+    --primary-color: #1B70F1;
+    --primary-light-color: #428dfc;
+    --primary-dark-color: #297efd;
+
+    --text-primary-color: #FFFFFF;
+    --transition-button-hover: .2s
+}

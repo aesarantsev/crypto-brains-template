@@ -1,0 +1,27 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+ul, ol {
+    list-style: none;
+}
