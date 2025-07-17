@@ -1,3 +1,12 @@
+/*
+* Brakepoints
+* 1590
+* 1200
+* 992
+* 768
+* 576
+*/
+
 :root {
     --container-width: 1590px;
 
@@ -8,6 +17,11 @@
     --primary-light-color: #428dfc;
     --primary-dark-color: #297efd;
 
+    --accent-primary-color: #9AC321;
+    --accent-primary-color-rgb: 154, 195, 33;
+
+    --text-success-main-color: #06B470;
+    --text-error-main-color: #F74E2C;
     --text-primary-color: #FFFFFF;
-    --transition-button-hover: .2s
+    --transition-button-hover: .2s;
 }

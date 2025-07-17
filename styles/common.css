@@ -1,3 +1,39 @@
+body * {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    color: var(--text-primary-color);
+    font-size: 96px;
+    line-height: 100%;
+
+    @media (max-width: 1200px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 66px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 52px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 38px;
+    }
+}
+
+
+em {
+    font-style: normal;
+}
+
 .container {
     max-width: var(--container-width);
     width: 100%;
@@ -7,12 +43,8 @@
     box-sizing: border-box;
 }
 
-body * {
-    font-family: 'Source Sans 3', sans-serif;
+.separator {
+    width: 1px;
+    background-color: var(--paragraph-color);
+    opacity: 40%;
 }
-
-html {
-    /*TODO - убрать. Временно добавил для комфорта*/
-    background-color: var(--background-color);
-}
-

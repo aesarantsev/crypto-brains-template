@@ -1,4 +1,4 @@
-<!--https://www.figma.com/design/EKbp40PN2vP5WsItDPg1h7/Crypto-Brains-Website?t=VtmKUyReDiOg72Bv-0-->
+<!-- https://www.figma.com/design/EKbp40PN2vP5WsItDPg1h7/Crypto-Brains-Website?node-id=1401-185034&p=f&t=K4Y5io7fTMbXqLc9-0 -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/common.css"/>
     <link rel="stylesheet" href="styles/header.css"/>
     <link rel="stylesheet" href="styles/button.css"/>
+    <link rel="stylesheet" href="styles/mainSection.css"/>
 </head>
 <body>
 <header>
@@ -23,7 +24,7 @@
             <a href="#" class="header__logo-link">
                 <img src="static/images/logo.svg" alt="Crypto Brains"/>
             </a>
-            <div class="header__separator"></div>
+            <div class="separator header__separator"></div>
         </div>
         <nav>
             <ul>
@@ -57,10 +58,93 @@
         </nav>
 
         <div>
-            <button class="button button--small button--secondary">Log In</button>
-            <button class="button button--small button--primary">Sign Up</button>
+            <button class="button button--small button--secondary header__log-in-btn">Log In</button>
+            <button class="button button--small button--primary header__sign-up-btn">Sign Up</button>
         </div>
     </div>
 </header>
+
+<section class="main-section">
+    <div class="main-section__container container">
+        <div class="main-section__info">
+            <h5>Crypto Brains</h5>
+
+            <h1>Buy & Sell Crypto Easy With <em>Crypto Brains</em></h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout.</p>
+
+            <div class="main-section__button-section">
+                <button class="button button--medium button--primary">Start Now</button>
+                <button class="button button--medium button--secondary button--variant-border">Beginner’s Guide</button>
+            </div>
+        </div>
+
+        <div class="main-section__img">
+            <img src="static/images/notebook.png" alt="Crypto Brains"/>
+            <img class="main-section__img-background" src="static/images/ellipse.png" alt="Crypto Brains"/>
+        </div>
+    </div>
+
+    <div class="main-section__currency-list-container main-section__container container">
+        <div class="main-section__currency-container">
+            <span class="main-section__currency-name">BTC / INR</span>
+            <span class="main-section__currency-diff main-section__currency-diff--up">
+                <img src="static/images/price-up.svg"/>
+                5.76%</span>
+            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+        </div>
+
+        <div class="separator main-section__currency-price-separator"></div>
+
+        <div class="main-section__currency-container">
+            <span class="main-section__currency-name">BTC / INR</span>
+            <span class="main-section__currency-diff main-section__currency-diff--up">
+                <img src="static/images/price-up.svg"/>
+                5.76%</span>
+            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+        </div>
+
+        <div class="separator main-section__currency-price-separator"></div>
+
+        <div class="main-section__currency-container">
+            <span class="main-section__currency-name">BTC / INR</span>
+            <span class="main-section__currency-diff main-section__currency-diff--down">
+                <img src="static/images/price-down.svg"/>
+                5.76%</span>
+            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+        </div>
+
+        <div class="separator main-section__currency-price-separator"></div>
+
+        <div class="main-section__currency-container">
+            <span class="main-section__currency-name">BTC / INR</span>
+            <span class="main-section__currency-diff main-section__currency-diff--up">
+                <img src="static/images/price-up.svg"/>
+                5.76%</span>
+            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+        </div>
+
+        <div class="separator main-section__currency-price-separator"></div>
+
+        <div class="main-section__currency-container">
+            <span class="main-section__currency-name">BTC / INR</span>
+            <span class="main-section__currency-diff main-section__currency-diff--up">
+                <img src="static/images/price-up.svg"/>
+                5.76%</span>
+            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+        </div>
+
+        <div class="separator main-section__currency-price-separator"></div>
+
+        <div class="main-section__currency-container">
+            <span class="main-section__currency-name">BTC / INR</span>
+            <span class="main-section__currency-diff main-section__currency-diff--down">
+                <img src="static/images/price-down.svg"/>
+                5.76%</span>
+            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+        </div>
+
+    </div>
+</section>
 </body>
 </html>

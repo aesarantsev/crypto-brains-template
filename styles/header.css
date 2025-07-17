@@ -2,7 +2,18 @@ header {
     background-color: var(--background-light-color);
     height: 120px;
     padding: 32px 0;
+
+    @media (max-width: 992px) {
+        height: 100px;
+        padding: 22px 0;
+    }
+
+    @media (max-width: 576px) {
+        height: 78px;
+        padding: 22px 0;
+    }
 }
+
 
 .header__root {
     display: flex;
@@ -10,6 +21,12 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header__root > nav {
+        display: none;
+    }
 }
 
 .header__logo {
@@ -21,39 +38,47 @@ header {
     display: inline-block;
     overflow: hidden;
     transition: 0.4s ease-out;
+    width: 150px;
+    height: 46px;
+    align-content: center;
+
+    @media (max-width: 576px) {
+        width: 91px;
+        height: 14px;
+    }
 }
 
-.header__logo-link::before {
-    content: url("../static/images/bitcoin.svg");
-    position: absolute;
-    top: 13px;
-    right: 0;
-    width: 13px;
-    height: 13px;
-    transform: translateX(100%) rotate(0deg);
-    transform-origin: center;
-    transition: transform 0.7s ease-out;
+.header__logo-link img {
+    object-fit: contain;
 }
 
-.header__logo-link:hover::before {
-    transform: translateX(-72px) rotate(-360deg);
-}
+@media (min-width: 992px) {
+    .header__logo-link::before {
+        content: url("../static/images/bitcoin.svg");
+        position: absolute;
+        top: 13px;
+        right: 0;
+        width: 13px;
+        height: 13px;
+        transform: translateX(100%) rotate(0deg);
+        transform-origin: center;
+        transition: transform 0.7s ease-out;
+    }
 
-.header__logo-link:hover {
-    transform: scale(1.1);
-}
+    .header__logo-link:hover::before {
+        transform: translateX(-72px) rotate(-360deg);
+    }
 
-
-.header__logo-link {
-    width: fit-content;
-    display: block;
+    .header__logo-link:hover {
+        transform: scale(1.1);
+    }
 }
 
 .header__separator {
-    width: 1px;
-    background-color: var(--paragraph-color);
     margin-left: 40px;
-    opacity: 40%;
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 header ul {
@@ -75,7 +100,6 @@ header ul {
     text-decoration: none;
     color: var(--paragraph-color);
     transition: 0.3s;
-
 }
 
 .header__menu-item .header__menu-item-arrow::after {
@@ -124,5 +148,17 @@ header ul {
     pointer-events: auto;
 }
 
+button.header__log-in-btn {
+    @media (max-width: 576px) {
+        padding: 0;
+        height: 36px;
+    }
+}
+
+.header__sign-up-btn {
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
 
 

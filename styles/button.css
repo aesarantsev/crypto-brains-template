@@ -36,6 +36,10 @@
     background-color: transparent;
 }
 
+.button--variant-border {
+    border: 1px solid var(--text-primary-color);
+}
+
 .button--secondary:hover {
 }
 
