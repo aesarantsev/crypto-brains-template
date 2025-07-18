@@ -4,7 +4,7 @@ body * {
 
 section {
     padding-top: 120px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
 }
 
 h1 {
@@ -30,6 +30,29 @@ h1 {
 }
 
 
+h2 {
+    color: var(--text-primary-color);
+    font-size: 58px;
+    line-height: 100%;
+
+    @media (max-width: 1200px) {
+        font-size: 56px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 52px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 48px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 42px;
+    }
+}
+
+
 em {
     font-style: normal;
 }
@@ -47,4 +70,40 @@ em {
     width: 1px;
     background-color: var(--paragraph-color);
     opacity: 40%;
+}
+
+.horizontal-separator {
+    height: 1px;
+    background: linear-gradient(
+            to right,
+            rgba(var(--text-primary-color-rgb), 0.04), rgba(var(--text-primary-color-rgb), 0.20), rgba(var(--text-primary-color-rgb), 0.04));
+    width: 100%;
+}
+
+
+.currency-diff {
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.currency-diff img {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.currency-diff--up {
+    color: var(--text-success-main-color);
+}
+
+.currency-diff--down {
+    color: var(--text-error-main-color);
+}
+
+.currency-price {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--text-primary-color);
+    white-space: nowrap;
 }

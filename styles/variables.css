@@ -23,5 +23,6 @@
     --text-success-main-color: #06B470;
     --text-error-main-color: #F74E2C;
     --text-primary-color: #FFFFFF;
+    --text-primary-color-rgb: 255, 255, 255;
     --transition-button-hover: .2s;
 }

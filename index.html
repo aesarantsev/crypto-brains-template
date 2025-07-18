@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/header.css"/>
     <link rel="stylesheet" href="styles/button.css"/>
     <link rel="stylesheet" href="styles/mainSection.css"/>
+    <link rel="stylesheet" href="styles/marketSection.css"/>
 </head>
 <body>
 <header>
@@ -88,61 +89,185 @@
     <div class="main-section__currency-list-container main-section__container container">
         <div class="main-section__currency-container">
             <span class="main-section__currency-name">BTC / INR</span>
-            <span class="main-section__currency-diff main-section__currency-diff--up">
+            <span class="currency-diff currency-diff--up">
                 <img src="static/images/price-up.svg"/>
                 5.76%</span>
-            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+            <span class="currency-price main-section__currency-price">₹ 28,214,25.341</span>
         </div>
 
         <div class="separator main-section__currency-price-separator"></div>
 
         <div class="main-section__currency-container">
             <span class="main-section__currency-name">BTC / INR</span>
-            <span class="main-section__currency-diff main-section__currency-diff--up">
+            <span class="currency-diff currency-diff--up">
                 <img src="static/images/price-up.svg"/>
                 5.76%</span>
-            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+            <span class="currency-price main-section__currency-price">₹ 28,214,25.341</span>
         </div>
 
         <div class="separator main-section__currency-price-separator"></div>
 
         <div class="main-section__currency-container">
             <span class="main-section__currency-name">BTC / INR</span>
-            <span class="main-section__currency-diff main-section__currency-diff--down">
+            <span class="currency-diff currency-diff--down">
                 <img src="static/images/price-down.svg"/>
                 5.76%</span>
-            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+            <span class="currency-price main-section__currency-price">₹ 28,214,25.341</span>
         </div>
 
         <div class="separator main-section__currency-price-separator"></div>
 
         <div class="main-section__currency-container">
             <span class="main-section__currency-name">BTC / INR</span>
-            <span class="main-section__currency-diff main-section__currency-diff--up">
+            <span class="currency-diff currency-diff--up">
                 <img src="static/images/price-up.svg"/>
                 5.76%</span>
-            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+            <span class="currency-price main-section__currency-price">₹ 28,214,25.341</span>
         </div>
 
         <div class="separator main-section__currency-price-separator"></div>
 
         <div class="main-section__currency-container">
             <span class="main-section__currency-name">BTC / INR</span>
-            <span class="main-section__currency-diff main-section__currency-diff--up">
+            <span class="currency-diff currency-diff--up">
                 <img src="static/images/price-up.svg"/>
                 5.76%</span>
-            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+            <span class="currency-price main-section__currency-price">₹ 28,214,25.341</span>
         </div>
 
         <div class="separator main-section__currency-price-separator"></div>
 
         <div class="main-section__currency-container">
             <span class="main-section__currency-name">BTC / INR</span>
-            <span class="main-section__currency-diff main-section__currency-diff--down">
+            <span class="currency-diff currency-diff--down">
                 <img src="static/images/price-down.svg"/>
                 5.76%</span>
-            <span class="main-section__currency-price">₹ 28,214,25.341</span>
+            <span class="currency-price main-section__currency-price">₹ 28,214,25.341</span>
         </div>
+
+    </div>
+</section>
+
+<section class="market-section">
+    <div class="market-section__container container">
+        <div class="market-section__header-contaier">
+            <h2>Market Trends</h2>
+            <div class="market-section__header-nav">
+                <button>All</button>
+                <button>Top Gainers</button>
+                <button>Top Losers</button>
+                <button>New Listing</button>
+                <button>Defi</button>
+                <button>Metaverse</button>
+            </div>
+        </div>
+        <div class="horizontal-separator"></div>
+        <div class="market-section__slider">
+            <div class="market-section__slider__item">
+                <div class="market-section__slider__item__img">
+                    <img src="static/images/currencies/bitcoin.svg" alt="Bitcoin"/>
+                </div>
+                <span class="market-section__slider__item__title">Bitcoin / BTC</span>
+                <span class="currency-diff currency-diff--up">
+                    <img src="static/images/price-up.svg"/>
+                    5.76%
+                </span>
+                <span class="currency-price market-section__slider__item__currency">₹ 28,214,25.341</span>
+                <div class="market-section__slider__item__graph">
+                    <img class="market-section__slider__item__graph__base" src="static/images/graph/graph-up.svg"/>
+                    <img class="market-section__slider__item__graph__background"
+                         src="static/images/graph/graph-up-background.svg"/>
+                </div>
+            </div>
+
+            <div class="market-section__slider__item">
+                <div class="market-section__slider__item__img">
+                    <img src="static/images/currencies/bts.svg" alt="Bts"/>
+                </div>
+                <span class="market-section__slider__item__title">BTS / BTC</span>
+                <span class="currency-diff currency-diff--down">
+                    <img src="static/images/price-down.svg"/>
+                    5.76%
+                </span>
+                <span class="currency-price market-section__slider__item__currency">₹ 2,541.12</span>
+                <div class="market-section__slider__item__graph">
+                    <img class="market-section__slider__item__graph__base" src="static/images/graph/graph-down.svg"/>
+                    <img class="market-section__slider__item__graph__background"
+                         src="static/images/graph/graph-down-background.svg"/>
+                </div>
+            </div>
+
+            <div class="market-section__slider__item">
+                <div class="market-section__slider__item__img">
+                    <img src="static/images/currencies/dgd.svg" alt="Dgd"/>
+                </div>
+                <span class="market-section__slider__item__title">DGD / BTC</span>
+                <span class="currency-diff currency-diff--up">
+                    <img src="static/images/price-up.svg"/>
+                    5.76%
+                </span>
+                <span class="currency-price market-section__slider__item__currency">₹ 284.64</span>
+                <div class="market-section__slider__item__graph">
+                    <img class="market-section__slider__item__graph__base" src="static/images/graph/graph-up.svg"/>
+                    <img class="market-section__slider__item__graph__background"
+                         src="static/images/graph/graph-up-background.svg"/>
+                </div>
+            </div>
+
+            <div class="market-section__slider__item">
+                <div class="market-section__slider__item__img">
+                    <img src="static/images/currencies/ethos.svg" alt="Ethos"/>
+                </div>
+                <span class="market-section__slider__item__title">Ethos / BTC</span>
+                <span class="currency-diff currency-diff--down">
+                    <img src="static/images/price-down.svg"/>
+                    5.76%
+                </span>
+                <span class="currency-price market-section__slider__item__currency">₹ 1,146,25.96</span>
+                <div class="market-section__slider__item__graph">
+                    <img class="market-section__slider__item__graph__base" src="static/images/graph/graph-down.svg"/>
+                    <img class="market-section__slider__item__graph__background"
+                         src="static/images/graph/graph-down-background.svg"/>
+                </div>
+            </div>
+
+            <div class="market-section__slider__item">
+                <div class="market-section__slider__item__img">
+                    <img src="static/images/currencies/kmd.svg" alt="Kmd"/>
+                </div>
+                <span class="market-section__slider__item__title">KMD / BTC</span>
+                <span class="currency-diff currency-diff--down">
+                    <img src="static/images/price-down.svg"/>
+                    5.76%
+                </span>
+                <span class="currency-price market-section__slider__item__currency">₹ 245.21</span>
+                <div class="market-section__slider__item__graph">
+                    <img class="market-section__slider__item__graph__base" src="static/images/graph/graph-down.svg"/>
+                    <img class="market-section__slider__item__graph__background"
+                         src="static/images/graph/graph-down-background.svg"/>
+                </div>
+            </div>
+
+            <div class="market-section__slider__item">
+                <div class="market-section__slider__item__img">
+                    <img src="static/images/currencies/etp.svg" alt="Etp"/>
+                </div>
+                <span class="market-section__slider__item__title">ETP / BTC</span>
+                <span class="currency-diff currency-diff--up">
+                    <img src="static/images/price-up.svg"/>
+                    5.76%
+                </span>
+                <span class="currency-price market-section__slider__item__currency">₹ 420.83</span>
+                <div class="market-section__slider__item__graph">
+                    <img class="market-section__slider__item__graph__base" src="static/images/graph/graph-up.svg"/>
+                    <img class="market-section__slider__item__graph__background"
+                         src="static/images/graph/graph-up-background.svg"/>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="button button--medium button--primary">See All Market</button>
 
     </div>
 </section>

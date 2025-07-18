@@ -1,6 +1,6 @@
 .main-section {
     background-color: var(--background-color);
-    padding-top: 160px;
+    padding-bottom: 0;
 
     @media (max-width: 1200px) {
         padding-top: 80px;
@@ -220,10 +220,6 @@
 .main-section__currency-price {
     grid-column: 1 / 3;
     grid-row: 2;
-    font-size: 20px;
-    line-height: 32px;
-    color: var(--text-primary-color);
-    white-space: nowrap;
 }
 
 .main-section__currency-price-separator {

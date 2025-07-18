@@ -1,0 +1,92 @@
+.market-section {
+    background-color: var(--background-color);
+}
+
+.market-section__header-contaier {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.market-section__header-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.market-section__header-nav > button {
+    font-size: 20px;
+    color: var(--paragraph-color);
+    transition: 0.3s;
+}
+
+.market-section__header-nav > button:hover {
+    color: var(--text-primary-color);
+}
+
+.market-section__slider {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.market-section__slider__item {
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--background-light-color);
+    width: 240px;
+    text-align: center;
+    transition: 0.3s ease-out;
+}
+
+.market-section__slider__item:hover {
+    box-shadow: 0px 0px 10px 1px rgb(var(--text-primary-color-rgb), 0.2);
+}
+
+.market-section__slider__item__img {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.market-section__slider__item__title {
+    color: var(--text-primary-color);
+    margin: 20px auto 10px auto;
+    display: inline-block;
+}
+
+.market-section__slider__item > .currency-diff {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.market-section__slider__item__currency {
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.market-section__slider__item__graph {
+    position: relative;
+    height: 100px;
+}
+
+.market-section__slider__item__graph > img {
+    position: absolute;
+    transition: 0.3s ease-out;
+}
+
+.market-section__slider__item__graph__background {
+    opacity: 0;
+}
+
+.market-section__slider__item:hover .market-section__slider__item__graph__background {
+    opacity: 1;
+}
+
+.market-section__slider__item:hover .market-section__slider__item__graph__base {
+    opacity: 0;
+}
+
+.market-section__container > button {
+    margin: 0 auto;
+    display: block;
+}
